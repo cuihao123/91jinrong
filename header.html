@@ -1,0 +1,65 @@
+<style>
+/*clearfix*/
+.clearfix:after{ content:"."; display:table; height:0; font-size: 0; line-height: 0; clear:both; visibility:hidden;}
+.clearfix{ zoom:1;}
+/*box-top*/
+.box-header{ display: table; width: 100%; height: 36px; line-height: 36px; padding: 0; margin: 0; background: #f5f5f5; border-bottom: solid 1px #ccc;}
+.box-top{ width: 1200px; margin: 0 auto; height: 36px; overflow: hidden;}
+.box-products,
+.box-products h3,
+.box-products ul,
+.box-products li,
+.box-login{ float: left; display: inline; font-size: 14px; color: #555; font-weight: bold;}
+.box-products h3,
+.box-products li{ border-right: solid 1px #ccc;}
+.box-products li{ padding: 0 25px;}
+	.box-products li a{ color: #555;}
+	.box-products li.wc i{ display: inline-block; width: 24px; height: 20px; margin-right:5px; background: url(http://ui.91jinrong.com/cs/images/icon-wc.png) 0 0 no-repeat; vertical-align: -6px;}
+	.box-products li.wc a,.box-products li a:hover{ color: #f08012;}
+.box-login{ float: right; font-weight: normal;}
+	.box-login a{ color: #555;}
+		.box-login a:hover{ color: #f08012;}
+	.box-login .collect{ display: inline-block; background: url(http://ui.91jinrong.com/cs/images/bg-collect.png) left center no-repeat; padding-left: 16px; margin-left:20px;}
+</style>
+
+
+<div class="box-header">
+	<div class="box-top clearfix">
+		<div class="box-products">
+			<h3>91金融超市旗下产品&nbsp;&nbsp;</h3>
+			<ul class="products-list">
+				<li><a target="_blank" href="http://zzb.91jinrong.com">增值宝</a></li>
+				<li class="wc"><a href="http://www.91wangcai.com" target="_blank"><i></i>91旺财</a></li>
+				<li><a target="_blank" href="http://www.91dk.com">91贷款</a></li>
+				<li><a target="_blank"  href="http://chexian.91jinrong.com">车险通</a></li>
+				<li><a target="_blank"  href="http://app.91jinrong.com/download/wangcai.apk">旺财安卓版</a></li>
+			</ul>
+		</div>
+		<div class="box-login">
+			<a href="/to_login">登录</a>&nbsp;|&nbsp;<a href="/to_regist">注册</a>
+			<span class="collect"><a href="javascript:addfavor(' http://www.91jirnong.com','91金融超市');">收藏91金融超市</a></span>
+		</div>
+	</div>
+</div>
+<!-- top-nav over -->
+
+<script>
+function addfavor(url,title) {
+    if(confirm("网站名称："+title+"\n网址："+url+"\n确定添加收藏?")){
+        var ua = navigator.userAgent.toLowerCase();
+        if(ua.indexOf("msie 8")>-1){
+            external.AddToFavoritesBar(url,title,'91jinrong');  //IE8
+        }else{
+            try {
+                window.external.addFavorite(url, title);
+            } catch(e) {
+                try {
+                    window.sidebar.addPanel(title, url, "");  //firefox
+                } catch(e) {
+                    alert("加入收藏失败，请使用Ctrl+D进行添加");
+                }
+            }
+        }
+    }
+}
+</script>

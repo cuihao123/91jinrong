@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>91金融超市官网  中国最大的互联网金融服务平台</title>
+<meta name="keywords" content="91金融超市官网  中国最大的互联网金融服务平台">
+<meta name="description" content="91金融超市，为您提供网上贷款，网上理财，网上办理信用卡，网上保险等金融产品及服务，是中国最大的互联网金融服务提供商。">
+<link rel="shortcut icon" href="images/favicon.ico" type="image/vnd.microsoft.icon">
+<link href="style/reset.css" rel="stylesheet"/>
+<link href="style/layout.css" rel="stylesheet"/>
+<link href="style/common.css" rel="stylesheet"/>
+<link href="style/model-login.css" rel="stylesheet"/>
+</head>
+<body>
+<!-- top-nav -->
+<div class="box-header">
+	<div class="box-top clearfix">
+		<div class="box-products">
+			<h3>91金融超市旗下产品&nbsp;&nbsp;</h3>
+			<ul class="products-list">
+				<li><a target="_blank" href="http://zzb.91jinrong.com">增值宝</a></li>
+				<li class="wc"><a href="http://www.91wangcai.com" target="_blank"><i></i>91旺财</a></li>
+				<li><a target="_blank" href="http://www.91dk.com">91贷款</a></li>
+				<li><a target="_blank"  href="http://chexian.91jinrong.com">车险通</a></li>
+				<li><a target="_blank"  href="http://app.91jinrong.com/download/wangcai.apk">旺财安卓版</a></li>
+			</ul>
+		</div>
+		<div class="box-login">
+			<a href="/to_login">登录</a>&nbsp;|&nbsp;<a href="/to_regist">注册</a>
+			<span class="collect"><a href="javascript:addfavor(' http://www.91jirnong.com','91金融超市');">收藏91金融超市</a></span>
+		</div>
+	</div>
+</div>
+<!-- top-nav over -->
+<div class="box-bg-logo">
+	<div class="box box-logo clearfix">
+		<h2 class="logo"><a href="/" title="91金融超市">91金融超市</a></h2>
+		<div class="box-tel"></div>
+	</div>
+</div>
+<!-- box-logo over -->
+
+<div class="content content-use">
+	<ul class="use-menu">
+		<li><a href="#" title="账户信息">账户信息</a></li>
+		<li class="active"><a href="#" title="博时基金">博时基金</a></li>
+		<li><a href="/to_EditPwd" title="修改密码">修改密码</a></li>
+		<li><a href="/userCenter/toEditMobile" title="修改手机号码">修改手机号码</a></li>
+		<li><a href="http://www.91wangcai.com/" target="_blank" title="个人理财">个人理财</a></li>
+		<li><a href="http://bj.91dk.com/" target="_blank" title="我要贷款">我要贷款</a></li>
+		<li><a href="http://chexian.91jinrong.com/index.html" target="_blank" title="购买车险">购买车险</a></li>
+		<li><a href="http://zzb.91jinrong.com/" target="_blank" title="企业理财">企业理财</a></li>
+	</ul>
+	<div class="login" id="oLogin">
+		<div class="login-form clearfix">
+			<h4 class="login-t"><em>基金申购</em></h4>
+			<form action="" method="post">
+				<h5 class="login-h5">基金名称</h5>
+				<p>
+					<span class="name-form">直销交易帐号：</span>
+					<select>
+						<option>博时帐号</option>
+						<option>交易帐号</option>
+					</select>
+				</p>
+				<p>
+					<span class="name-form">申购金额：</span>
+					<input name="" class="s-input input-sg" type="text" value="">元
+				</p>
+				<p>
+					<span class="name-form">资金来源：</span>
+					<input type="radio">网上支付
+					<input type="radio">汇款支付
+				</p>
+				<p>
+					<span class="name-form">交易密码：</span>
+					<input name="" class="s-input" type="password" value="">
+				</p>
+				<p>
+					<span class="name-form">验证码：</span>
+					<input class="s-input" name="code" id="captcha"  type="text" value="">
+		            <span class="code">
+		            	<img style="cursor:pointer; margin-right:10px;" width="100" height="47" src="/findPwd/captchaImg"  id="img" >
+	                </span>
+	                <span><a href="javascript:changeCodeImage()">换一张</a></span>
+	                <span class="" id="reminder2"> </span>
+				</p>
+				<p>
+					<span class="name-form">&nbsp;</span>
+					<input type="checkbox">受理日期已变为下一个工作日，您是否继续交易？
+				</p>
+				<p>
+					<span class="name-form">&nbsp;</span>
+					<input type="submit" value="确定" class="s-btn btn-login">
+					<input type="submit" value="返回" class="s-btn btn-login">
+				</p>
+			</form>
+		</div>
+	</div>
+	<!-- login-form over -->
+</div>
+<!-- content over -->
+<div class="box-copy">
+	<div class="copy-text">
+		<p>Copyright © 2014 91JinRong.com Inc. All Rights Reserved. 九一金融信息服务（北京）有限公司</p>
+		<p>京ICP备12006409号京公网安【110102006082-3】</p>
+	</div>
+</div>
+<script src="script/jquery-1.11.1.min.js"></script>
+<script src="script/fn-lc.js"></script>
+<script src="script/fn-login.js"></script>
+<script>
+function addfavor(url,title) {
+    if(confirm("网站名称："+title+"\n网址："+url+"\n确定添加收藏?")){
+        var ua = navigator.userAgent.toLowerCase();
+        if(ua.indexOf("msie 8")>-1){
+            external.AddToFavoritesBar(url,title,'91jinrong');  //IE8
+        }else{
+            try {
+                window.external.addFavorite(url, title);
+            } catch(e) {
+                try {
+                    window.sidebar.addPanel(title, url, "");  //firefox
+                } catch(e) {
+                    alert("加入收藏失败，请使用Ctrl+D进行添加");
+                }
+            }
+        }
+    }
+}
+</script>
+</body>
+</html>

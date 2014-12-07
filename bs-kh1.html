@@ -1,0 +1,268 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>91金融超市官网  中国最大的互联网金融服务平台</title>
+<meta name="keywords" content="91金融超市官网  中国最大的互联网金融服务平台">
+<meta name="description" content="91金融超市，为您提供网上贷款，网上理财，网上办理信用卡，网上保险等金融产品及服务，是中国最大的互联网金融服务提供商。">
+<link rel="shortcut icon" href="images/favicon.ico" type="image/vnd.microsoft.icon">
+<link href="style/reset.css" rel="stylesheet"/>
+<link href="style/layout.css" rel="stylesheet"/>
+<link href="style/common.css" rel="stylesheet"/>
+<link href="style/model-login.css" rel="stylesheet"/>
+</head>
+<body>
+<!-- top-nav -->
+<div class="box-header">
+	<div class="box-top clearfix">
+		<div class="box-products">
+			<h3>91金融超市旗下产品&nbsp;&nbsp;</h3>
+			<ul class="products-list">
+				<li><a target="_blank" href="http://zzb.91jinrong.com">增值宝</a></li>
+				<li class="wc"><a href="http://www.91wangcai.com" target="_blank"><i></i>91旺财</a></li>
+				<li><a target="_blank" href="http://www.91dk.com">91贷款</a></li>
+				<li><a target="_blank"  href="http://chexian.91jinrong.com">车险通</a></li>
+				<li><a target="_blank"  href="http://app.91jinrong.com/download/wangcai.apk">旺财安卓版</a></li>
+			</ul>
+		</div>
+		<div class="box-login">
+			<a href="/to_login">登录</a>&nbsp;|&nbsp;<a href="/to_regist">注册</a>
+			<span class="collect"><a href="javascript:addfavor(' http://www.91jirnong.com','91金融超市');">收藏91金融超市</a></span>
+		</div>
+	</div>
+</div>
+<!-- top-nav over -->
+<div class="box-bg-logo">
+	<div class="box box-logo clearfix">
+		<h2 class="logo"><a href="/" title="91金融超市">91金融超市</a></h2>
+		<div class="box-tel"></div>
+	</div>
+</div>
+<!-- box-logo over -->
+
+<div class="content content-use">
+	<ul class="use-menu">
+		<li><a href="#" title="账户信息">账户信息</a></li>
+		<li class="active"><a href="#" title="博时基金">博时基金</a></li>
+		<li><a href="/to_EditPwd" title="修改密码">修改密码</a></li>
+		<li><a href="/userCenter/toEditMobile" title="修改手机号码">修改手机号码</a></li>
+		<li><a href="http://www.91wangcai.com/" target="_blank" title="个人理财">个人理财</a></li>
+		<li><a href="http://bj.91dk.com/" target="_blank" title="我要贷款">我要贷款</a></li>
+		<li><a href="http://chexian.91jinrong.com/index.html" target="_blank" title="购买车险">购买车险</a></li>
+		<li><a href="http://zzb.91jinrong.com/" target="_blank" title="企业理财">企业理财</a></li>
+	</ul>
+	<div class="login" id="oLogin">
+		<div class="login-form clearfix">
+			<h4 class="login-t"><em>博时基金开户</em></h4>
+			<form action="" method="post">
+				<p>
+		        	<span class="name-form"><i>*</i>选择银行：</span>
+		        	<span id="bankName"></span>
+		        	<a href="javascript:" title="添加银行卡" class="add-bank" id="addBank">+添加银行卡</a>
+		        	<input type="hidden" value="" id="bankId">
+		        </p>
+		        <p>
+		        	<span class="name-form"><i>*</i>发卡银行：</span>
+		        	<input name="" class="s-input" type="text" value="" id="bankBtnName">
+		        	<span class="form-error" id="bank-error">银行选择错误</span>
+		        </p>
+		        <p>
+		        	<span class="name-form"><i>*</i>银行卡号：</span>
+		        	<input name="" class="s-input" type="text" value="">
+		        </p>
+		        <p>
+		        	<span class="name-form"><i>*</i>真实姓名：</span>
+		        	<input name="" class="s-input" type="text" value="">
+		        </p>
+		        <p>
+		        	<span class="name-form"><i>*</i>身份证号码：</span>
+		        	<input name="" class="s-input" type="text" value="">
+		        </p>
+		        <p>
+		        	<span class="name-form"><i>*</i>银行预留手机号：</span>
+		        	<input name="" class="s-input" type="text" value="">
+		        	<input type="button" value="发送验证码" class="s-btn">
+		        	<input type="button" value="重新发送" class="s-btn">
+		        </p>
+		        <p>
+		        	<span class="name-form">动态验证码：</span>
+		        	<input name="" id=""class="s-input" type="password" value="">
+		        </p>
+		        <p>
+		        	<span class="name-form">&nbsp;</span>
+		        	<input type="submit" value="下一步" class="s-btn btn-login">
+		        </p>
+		    </form>
+		</div>
+	</div>
+	<!-- login-form over -->
+</div>
+<!-- content over -->
+<div class="box-copy">
+	<div class="copy-text">
+		<p>Copyright © 2014 91JinRong.com Inc. All Rights Reserved. 九一金融信息服务（北京）有限公司</p>
+		<p>京ICP备12006409号京公网安【110102006082-3】</p>
+	</div>
+</div>
+
+
+
+<div class="popup bank-popup" id="bankPopup">
+	<h3>选择银行</h3>
+	<div class="box-bank-list">
+		<ul class="bank-list clearfix" id="bankList">
+			<li id="001">
+				<span><img src="images/logo-bank/logo-bj2.jpg"></span>
+				<p>中国人民银行</p>
+			</li>
+			<li id="002">
+				<span><img src="images/logo-bank/logo-bj2.jpg"></span>
+				<p>中国工商银行</p>
+			</li>
+			<li id="003">
+				<span><img src="images/logo-bank/logo-bj2.jpg"></span>
+				<p>中国农业银行</p>
+			</li>
+			<li id="004">
+				<span><img src="images/logo-bank/logo-bj2.jpg"></span>
+				<p>中国银行</p>
+			</li>
+			<li id="005">
+				<span><img src="images/logo-bank/logo-bj2.jpg"></span>
+				<p>中国建设银行</p>
+			</li>
+			<li id="006">
+				<span><img src="images/logo-bank/logo-bj2.jpg"></span>
+				<p>交通银行</p>
+			</li>
+			<li id="007">
+				<span><img src="images/logo-bank/logo-bj2.jpg"></span>
+				<p>招商银行</p>
+			</li>
+			<li id="008">
+				<span><img src="images/logo-bank/logo-bj2.jpg"></span>
+				<p>中信实业银行</p>
+			</li>
+			<li id="009">
+				<span><img src="images/logo-bank/logo-bj2.jpg"></span>
+				<p>中国民生银行</p>
+			</li>
+			<li id="010">
+				<span><img src="images/logo-bank/logo-bj2.jpg"></span>
+				<p>上海浦东发展银行</p>
+			</li>
+			<li value="011">
+				<span><img src="images/logo-bank/logo-bj2.jpg"></span>
+				<p>深圳发展银行</p>
+			</li>
+			<li value="012">
+				<span><img src="images/logo-bank/logo-bj2.jpg"></span>
+				<p>华夏银行</p>
+			</li>
+			<li value="013">
+				<span><img src="images/logo-bank/logo-bj2.jpg"></span>
+				<p>中国光大银行</p>
+			</li>
+			<li value="014">
+				<span><img src="images/logo-bank/logo-bj2.jpg"></span>
+				<p>广东发展银行</p>
+			</li>
+			<li value="015">
+				<span><img src="images/logo-bank/logo-bj2.jpg"></span>
+				<p>北京银行</p>
+			</li>
+			<li value="016">
+				<span><img src="images/logo-bank/logo-bj2.jpg"></span>
+				<p>兴业银行</p>
+			</li>
+			<li value="017">
+				<span><img src="images/logo-bank/logo-bj2.jpg"></span>
+				<p>深圳市商业银行</p>
+			</li>
+			<li value="018">
+				<span><img src="images/logo-bank/logo-bj2.jpg"></span>
+				<p>上海银行</p>
+			</li>
+			<li value="019">
+				<span><img src="images/logo-bank/logo-bj2.jpg"></span>
+				<p>武汉市商业银行</p>
+			</li>
+			<li value="020">
+				<span><img src="images/logo-bank/logo-bj2.jpg"></span>
+				<p>福州市商业银行</p>
+			</li>
+			<li value="021">
+				<span><img src="images/logo-bank/logo-bj2.jpg"></span>
+				<p>成都市商业银行</p>
+			</li>
+			<li value="022">
+				<span><img src="images/logo-bank/logo-bj2.jpg"></span>
+				<p>渣打银行上海分行</p>
+			</li>
+			<li value="023">
+				<span><img src="images/logo-bank/logo-bj2.jpg"></span>
+				<p>南京市商业银行</p>
+			</li>
+			<li value="024">
+				<span><img src="images/logo-bank/logo-bj2.jpg"></span>
+				<p>花旗银行</p>
+			</li>
+			<li value="025">
+				<span><img src="images/logo-bank/logo-bj2.jpg"></span>
+				<p>济南市商业银行</p>
+			</li>
+			<li value="026">
+				<span><img src="images/logo-bank/logo-bj2.jpg"></span>
+				<p>浙江省绍兴市商业银行</p>
+			</li>
+			<li value="027">
+				<span><img src="images/logo-bank/logo-bj2.jpg"></span>
+				<p>上海市农村信用社</p>
+			</li>
+			<li value="028">
+				<span><img src="images/logo-bank/logo-bj2.jpg"></span>
+				<p>南昌市商业银行</p>
+			</li>
+			<li value="029">
+				<span><img src="images/logo-bank/logo-bj2.jpg"></span>
+				<p>昆山农村商业银行</p>
+			</li>
+			<li value="030">
+				<span><img src="images/logo-bank/logo-bj2.jpg"></span>
+				<p>杭州商业银行</p>
+			</li>
+		</ul>
+	</div>
+	<i class="p-close" id="bankClose">x</i>
+</div>
+<div class="bg-black" id="bankBg"></div>
+
+<!-- 
+<script src="script/common.js"></script>
+<script src="script/fun-login.js"></script>
+-->
+<script src="script/jquery-1.11.1.min.js"></script>
+<script src="script/fn-lc.js"></script>
+<script src="script/fn-login.js"></script>
+<script>
+function addfavor(url,title) {
+    if(confirm("网站名称："+title+"\n网址："+url+"\n确定添加收藏?")){
+        var ua = navigator.userAgent.toLowerCase();
+        if(ua.indexOf("msie 8")>-1){
+            external.AddToFavoritesBar(url,title,'91jinrong');  //IE8
+        }else{
+            try {
+                window.external.addFavorite(url, title);
+            } catch(e) {
+                try {
+                    window.sidebar.addPanel(title, url, "");  //firefox
+                } catch(e) {
+                    alert("加入收藏失败，请使用Ctrl+D进行添加");
+                }
+            }
+        }
+    }
+}
+</script>
+</body>
+</html>
