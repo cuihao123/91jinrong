@@ -1,0 +1,273 @@
+@charset "utf-8";
+body{ background: #f0efef;}
+.box-bg-logo{ width: 100%; background: #fff;}
+.lc-btn,.s-btn{ font-family:"Microsoft Yahei"; display: inline-block; height: 44px; line-height: 44px; color: #0098d9; text-align: center; background: #fff; border: solid 1px #0098d9; font-size: 18px; padding: 0 20px; cursor: pointer; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px; -webkit-transition:all 0.3s ease-in-out; -moz-transition:all 0.3s ease-in-out; transition:all 0.3s ease-in-out;}
+	.lc-btn:hover,.s-btn:hover{ background: #ea544a; border-color: #ea544a; color: #fff;}
+	.lc-btn-defult{ color: #999; border-color: #ccc;}
+.pre-num-box{ position: relative; z-index: 10; display: inline-block; width: 100px; height: 10px; line-height: 10px; text-align: center; background: rgba(0,0,0,0.3); -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px;}
+.pre-num{ position: relative; right: -85px; z-index: 12; font-size: 14px; color: #555;}
+.pre-box{ position: absolute; left: 0; top: 0; z-index: 11; width: 0; height: 10px; background: #ea544a; -webkit-border-radius:4px; -moz-border-radius:4px; border-radius:4px;}
+.pre-box-m{ background: #f00;}
+.em-num{ display: inline-block; font-size: 30px; font-weight: bold; vertical-align: -2px; color: #ea544a;}
+/*menu*/
+.use-nav{ float: left; display: inline; width: 238px; margin-top: 20px; background: #fff; border: solid 1px #e5e5e5;}
+	.use-nav h3{ display: block; margin: 30px 15px 40px; font-size: 0; line-height: 0; height: 0; color: #555; border-bottom: solid 1px #e5e5e5; position: relative; z-index: 4;}
+	.use-nav h3.last{ margin-bottom: 30px;}
+		.use-nav h3 em{ display: inline-block; font-size: 18px; line-height: 50px; font-weight: bold; background: #fff left center no-repeat; position: relative; top: -25px; padding: 0 10px 0 25px; color: #555; cursor: pointer;}
+			.use-nav h3 em.mes{ background-image: url(http://ui.91jinrong.com/cs/images/user-icon01.png);}
+			.use-nav h3 em.zc{ background-image: url(http://ui.91jinrong.com/cs/images/user-icon02.png);}
+			.use-nav h3 em.lc{ background-image: url(http://ui.91jinrong.com/cs/images/user-icon03.png);}
+		.use-nav h3 i{ position: absolute; right: 0; top: -5px; width: 10px; height: 10px; background: #e5e5e5; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px;}
+	.use-nav p{ display: none; margin: -10px 0 0; padding: 0; color: #555; position: relative; z-index: 5; filter: alpha(opacity=100); opacity:1;}
+	.use-nav p a{ display: block; background: #fff; color: #555; filter: alpha(opacity=100); opacity:1; padding: 0 0 0 35px; border-left: solid 5px #fff; font-size: 16px; height: 50px; line-height: 50px; -webkit-transition:background 0.2s ease-in-out; -moz-transition:background 0.2s ease-in-out; transition:background 0.2s ease-in-out;}
+	.use-nav p a:hover,.use-nav .on{ background: #f2fafd; border-left: solid 5px #0098d9;}
+	.use-nav h3.active{ margin-bottom: 40px;}
+/*login*/
+.login{ float: left; display: inline; width: 940px; background: #fff; border-top: 5px solid #1d92c8; margin: 20px 0 0 20px; padding-bottom: 20px;}
+.login-new{ width: 1200px; float: none; display: block; margin: 20px auto;}
+.login-t{ height: 40px; line-height: 40px; font-size: 18px; border-bottom: solid 1px #e5e5e5; margin: 0 20px 20px;}
+	.login-t em{ font-size: 18px; color: #555; font-weight: bold;}
+	.login-t cite{ font-size: 12px; color: #0098d9; padding-left: 20px;}
+		.login-t cite a{ color: #999;}
+			.login-t cite a:hover{ color: #0098d9;}
+	.login-t cite.cite-login{ font-size: 14px; padding-left: 10px;}
+.login-h5{ height: 40px; line-height: 40px; font-size: 16px; color: #333; margin: 0 30px; clear: both; border-bottom: dashed 1px #e5e5e5;}
+.login-form{ padding-top: 30px;}
+	.login-form p{ float: left; width: 100%; padding-bottom: 30px; height: 47px; line-height: 47px;}
+	.login-form p.padding{ padding-bottom: 10px; line-height: 1em;}
+	.login-form p span,.login-form p em,.login-form p .s-input,.login-form p .s-btn{ float: left; display: inline-block;}
+	.login-form p .name-form{ display: inline-block; width: 150px; text-align: right; margin-right:10px; font-size: 14px;}
+		.login-form p .name-form i{ color: #f00;}
+	.login-form p em{ color: #999;}
+		.login-form p em.imp{ color: #f00;}
+		.login-form p .name-form em{ float: none; margin-right: 5px;}
+	.login-form p em.interest{ color: #ea544a;}
+	.login-form .s-input{ margin-right:10px;}
+	.login-form .s-btn{ height: 47px; line-height: 47px; margin: 0 10px 0 0;}
+	.login-form .form-check{ display: inline-block; width: 16px; height: 16px; vertical-align: -4px;}
+	.login-form .s-select{ float: left; margin-top: 13px;}
+	.login-form .btn-login{ padding: 0 60px; font-size: 16px; height: 45px;}
+	.login-form p.cite{ font-size: 14px;}
+	.login-form p.cite em{ float: none; margin-right:10px; color: #f00;}
+.pwd-step{ padding: 50px 0 20px 20px; text-align: center; font-size: 0; line-height: 0}
+	.pwd-step li{ float: left; display: inline; font-size: 14px; line-height: 15px; height:15px; margin-right:10px;}
+	.pwd-step li i{ display: inline-block; vertical-align: -2px; width: 210px; height: 15px; margin-right:10px; background: url(http://ui.91jinrong.com/cs/images/tit.png) right bottom no-repeat;}
+	.pwd-step li.active i{ background-position: right top;}
+.box-fsh{ padding-top: 30px; text-align: center;}
+	.box-fsh img{ display: block; margin: 30px auto;}
+	.box-fsh h4{ font-size: 18px;}
+	.box-fsh h4 span{ display: inline-block; background: url(http://ui.91jinrong.com/cs/images/fsh-new.png) left center no-repeat; height: 30px; line-height: 30px; padding-left: 40px;}
+	.box-fsh p{ padding-bottom: 20px; font-size: 14px;}
+		.box-fsh p em{ color: #f00;}
+.content-use{ position: relative;}
+.box-user-mes{ border: solid 3px #e5e5e5; margin: 0 20px; padding: 20px; position: relative;}
+.box-user-mes .user-img{ float: left; display: inline; width: 80px; height: 80px; overflow: hidden;}
+.box-user-mes p{ margin-left: 90px; float: none; width: auto; font-size: 14px; color: #555; padding: 0; line-height: 30px; height: 30px;}
+	.box-user-mes p .name-form{ display: inline-block; width: 100px; text-align: right; color: #999;}
+	.box-user-mes .sm-info-mes{ display: inline-block; padding: 0; width: 160px;}
+	.box-user-mes .uesr-c-sm{ position: absolute; right: 0; top: 0; color: #fff; font-weight: bold; width: 70px; padding: 60px 60px 0; text-align: center; height: 60px; background: #0098d9 url(http://ui.91jinrong.com/cs/images/uesr-c-sm.png) center 20px no-repeat;}
+.content-use .login-form{ padding-top: 0; font-size: 14px;}
+.use-mes p{ padding: 0;}
+.account-mes p{ padding-bottom: 0px; height: 30px; line-height: 30px;}
+.account-mes .btn-sg{ padding: 0 30px; line-height: 40px; height: 40px;}
+.account-mes .btn-sg:hover{ color: #fff;}
+.account-mes p.bs-jl{ height: 42px; line-height: 42px;}
+.btn-bs-jl{ float: right; color: #f00; margin-right: 20px; line-height: 40px; height: 40px;}
+	.account-mes .btn-bs-jl:hover{ color: #fff;}
+.input-sg{ width: 100px; padding: 5px;}
+.login-form p.cite-sg{ padding: 0 40px; line-height: 30px; height: auto;}
+.btn-fh{ display: inline-block; height: 40px; line-height: 40px; padding: 0 20px; margin-top: 20px; border: none;}
+.add-bank{ display: inline-block; padding: 0 10px; height: 40px; line-height: 40px; border: solid 1px #ccc; -webkit-border-radius:3px; -moz-border-radius:3px; border-radius:3px; -webkit-transition:background 0.2s ease-in-out; -moz-transition:background 0.2s ease-in-out; transition:background 0.2s ease-in-out;}
+	.add-bank:hover{ background: #dfeef7;}
+.change-tel{ background: url(http://ui.91jinrong.com/cs/images/uesr-c-tel.png) center top no-repeat; padding: 90px 0 0 0; color: #555; text-align: center; font-size: 16px;}
+	.change-tel em{ display: block; color: #0098d9; font-size: 28px; padding-top: 5px;}
+.sm-cite{ display: inline-block; width: auto; margin: 0 20px 20px; padding: 0 10px; height: 25px; line-height: 25px;}
+.sm-cite1{ background: #fde1dd; border: solid 1px #ea5439; color: #ba2004;}
+.sm-cite2{ background: #fef7db; border: solid 1px #fcae42; color: #ff5a00; margin-left: 160px;}
+/*bank-popup*/
+.bank-popup{ width: 600px; height: 600px; padding: 0 10px; left: 50%; top: 50%; margin: -300px 0 0 -300px;}
+	.bank-popup h3{ border-bottom: solid 1px #ccc; font-size: 18px; line-height: 40px; font-weight: bold;}
+.box-bank-list{ width: 600px; overflow: hidden;}
+.bank-list{ width: 650px;}
+	.bank-list li{ float: left; display: inline; width: 110px; height: 60px; overflow: hidden; margin: 10px 10px 0 0; cursor: pointer;}
+		.bank-list li img{ display: block;}
+		.bank-list li p{ width: 100%; height: 20px; line-height: 20px; font-size: 14px; overflow: hidden; text-align: center;}
+.btn-bank{ border: none; height: 40px; line-height: 40px; padding: 0 30px;}
+.bank-span{ display: inline-block; margin-right: 20px; width: 110px; height: 40px; margin-top:3px; border: solid 1px #ccc; overflow: hidden; -webkit-border-radius:3px; -moz-border-radius:3px; border-radius:3px;}
+	.bank-span img{ display: block; width: 110px; height: 40px;}
+/*bs-table*/
+.bs-table{ border: solid 1px #ccc; border-right: none; border-bottom: none; margin: 10px auto; width: 880px;}
+	.bs-table tr{ border-bottom: solid 1px #ccc;}
+	.bs-table tr th,.bs-table .s-td{ background: #f1f9fc; color: #0098d9;}
+	.bs-table .s-td{ height: 30px; line-height: 30px; padding: 0 10px; width: 300px;}
+	.bs-table tr th,.bs-table tr td{ border-right: solid 1px #ccc; text-align: center; padding: 0 5px; line-height: 40px; -webkit-transition:background 0.2s ease-in-out; -moz-transition:background 0.2s ease-in-out; transition:background 0.2s ease-in-out;}
+	.bs-table tr:hover td{ background: #f1f1f1;}
+/*fxpc*/
+.box-fxpc{ padding-bottom: 20px;}
+	.box-fxpc h3{ margin: 0 20px;}
+	.box-fxpc dl{ margin: 40px 20px; padding-bottom:20px; border-bottom: solid 1px #ccc;}
+	.box-fxpc dt{ font-size: 16px; color: #333; font-weight: bold; padding-bottom: 20px; line-height: 27px;}
+	.box-fxpc dd{ padding: 0 25px; font-size: 14px; color: #555; padding-bottom: 20px;}
+	.box-fxpc .s-radio,.box-fxpc .s-checkbox{ vertical-align: -5px; margin-right:10px;}
+	.box-fxpc p{ text-align: center;}
+/*pro-list*/
+.pro-list{ position: relative; margin: 20px 20px 0; border: solid 1px #e5e5e5; padding: 15px;}
+	.pro-list:hover{ border-color: #ea544a;}
+	.pro-list:hover .lc-btn{ border-color: #ea544a; color: #ea544a;}
+		.pro-list .lc-btn:hover{ background: #ea544a; border-color: #ea544a; color: #fff;}
+	.pro-list .lc-btn{ position: absolute; right: 15px; top: 125px;}
+	.btn-default,.btn-default:hover,.pro-list:hover .btn-default,.pro-list .btn-default:hover{ background: #ccc; cursor: default; border: solid 1px #ccc; color: #fff;}
+
+.pro-list h4{ padding: 0; font-size: 14px; line-height: 22px; color: #555; font-size: 18px; font-weight: bold; line-height: 22px;}
+	.pro-list h4 a{ display: inline-block; color: #555; font-size: 18px; font-weight: bold; line-height: 22px;}
+		.pro-list h4 a:hover{ color: #0098d9;}
+	.pro-list h4 a.check-info{ margin-left: 10px; color: #0098d9; font-weight: normal; font-size: 14px;}
+	.pro-list h4 a.btn-slide-up{ display: none;}
+.pro-list p{ padding-bottom: 10px;}
+.pro-list p.nh-num{ padding: 20px 0; font-size: 16px; font-weight: bold; color: #ea544a;}
+	.pro-list p.nh-num span{ display: inline-block; vertical-align: 4px;}
+	.pro-list p.nh-num em{ display: inline-block; font-size: 36px; line-height: 42px; font-weight: bold;}
+.pro-list .pre-num-box{ vertical-align: -4px;}
+.pro-list .pre-num{ top: -4px;}
+.pro-list ul{ font-size: 0; line-height: 0; height: 50px; overflow: hidden;}
+	.pro-list li{ position: relative; left: -31px; float: left; display: inline-block; font-size: 14px; line-height: 18px; color: #999; width: 250px; padding: 0 0 14px 30px; overflow: hidden; border-left:solid 1px #ccc;}
+	.pro-list li em{ font-size: 14px; line-height: 18px; color: #555;}
+.pro-list-info{ border: none; border-bottom: solid 1px #e5e5e5;}
+.pro-text{ display: none; margin: 20px 0 0; padding-top: 20px; font-size: 14px; color: #555; line-height: 30px; border-top: solid 1px #e5e5e5;}
+	.pro-text p{ padding-bottom: 10px; color: #666;}
+		.pro-text p span{ font-weight: bold; color: #333;}
+.pro-list-buy{ border-color: #ea544a; margin-top: 0;}
+.confirm{ padding: 0; margin: 0 20px; padding-bottom: 10px; font-size: 14px; color: #ea544a; font-weight: bold;}
+	.confirm .btn-return{ font-weight: normal; margin-left: 10px; color: #0098d9;}
+/*pro-form*/
+.pro-form{ margin: 30px 20px 0; color: #555; font-size: 14px;}
+	.pro-form .s-input{ padding: 8px 10px; margin-right: 10px;}
+	.pro-form p{ padding-bottom: 15px;}
+	.pro-form-t{ display: inline-block; width: 70px; text-align: left;}
+	.interest{ color: #ea544a; padding-left: 15px;}
+	.user-money{ font-size: 18px; font-weight: bold; vertical-align: -2px; margin-right: 5px;}
+	.recharge{ display: inline-block; margin-left: 20px; padding: 0 12px; height: 23px; line-height: 23px; color: #fff; background: #ea544a; -webkit-border-radius:3px; -moz-border-radius:3px; border-radius:3px; -webkit-transition:background 0.2s ease-in-out; -moz-transition:background 0.2s ease-in-out; transition:background 0.2s ease-in-out;}
+		.recharge:hover{ background: #0098d9;}
+	.remainder{ color: #ea544a; font-size: 24px; font-weight: bold; vertical-align: -2px; margin-right: 5px;}
+.tender-money{}
+	.tender-money .s-input{ width: 100px;}
+.tender-pass{ border-top: solid 1px #e5e5e5; border-bottom: solid 1px #e5e5e5; padding-top: 25px;}
+	.tender-pass p{ padding-bottom: 25px;}
+		.tender-pass p a{ color: #0098d9;}
+	.tender-pass .s-yzm{ width: 170px; vertical-align: 0;}
+	.box-yzm .pro-form-t,.box-yzm .s-input,.box-yzm .span-yzm{ float: left; display: inline;}
+	.box-yzm .pro-form-t{ margin-top: 10px; width: 75px;}
+	.box-yzm .s-input{}
+		.span-yzm img{ display: inline-block; margin-right: 10px; vertical-align: middle; border: solid 1px #e5e5e5;}
+		.span-yzm a{ text-align: center; color: #0098d9;}
+.btn-pay{ padding: 20px 0 0;}
+	.btn-pay .lc-btn{ padding: 0 30px;}
+/*box-bank*/
+.box-bank{ position: relative; padding-left: 75px;}
+.s-recharge-t{ position: absolute; left: 0; top: 0;}
+.payment-menu{ border-bottom: solid 1px #ccc; margin-bottom: 30px;}
+	.payment-menu li{ float: left; display: inline; height: 35px; line-height: 35px; padding: 0 45px; margin-right: 10px; background: #f7f7f7; border: solid 1px #fff; border-bottom: none; cursor: pointer;}
+	.payment-menu li.active,.payment-menu li:hover{ border: solid 1px #ccc; border-bottom: solid 1px #fff; height: 34px; line-height: 34px; position: relative; bottom: -1px;  background: #fff;}
+.box-payment .hidden{ display: none;}
+.b-list{}
+	.b-list li{ float: left; display: inline; width: 160px; height: 60px; font-size: 16px; overflow: hidden; border: solid 1px #e5e5e5; margin: 0 10px 10px 0; cursor: pointer;}
+	.b-list li:hover,.b-list li.active{ width: 158px; height: 58px; border: solid 2px #0098d9;}
+		.b-list li:hover img,.b-list li.active img{ margin: -1px 0 0 -1px;}
+		.b-list li img{ display: block;}
+	.b-list li.bank-more{ background: #eee; color: #666; text-align: center; line-height: 58px;}
+		.b-list li:hover.bank-more{ line-height: 56px;}
+.payment-text p{ padding-bottom: 20px;}
+	.payment-text p a{ color: #555;}
+		.payment-text p a:hover{ color: #0098d9;}
+.payment-text .pay-text-span{ display: inline-block; width: 80px; text-align: right; color: #555;}
+.payment-text .s-input{ width: 280px; font-size: 14px;}
+.payment-text .s-input-name{ width: 100px;}
+.btn-change-bank,.btn-cash-bank{ height: 40px; line-height: 40px; padding: 0 20px; font-size: 14px;}
+.btn-change-bank:hover,.btn-cash-bank:hover{ color: #fff;}
+.cyber-bank li{ display: none;}
+.change-bank{ display: none; margin-bottom: 20px;}
+.select-bank{ display: inline-block; position: relative; padding: 0 10px; width: auto; height: 40px; line-height: 40px; margin-right:10px; border: solid 1px #e5e5e5; vertical-align: middle;}
+	.select-bank cite{ color: #999; font-size: 12px; margin-left: 10px;}
+	.select-bank img{ float: left; display: inline; width: 110px; height: 40px; margin: 0 0;}
+.box-recharge-tx{ margin-top: 40px;}
+.box-recharge dl{ font-size: 14px; color: #333;}
+	.box-recharge dt{ padding-bottom: 10px; font-weight: bold;}
+	.box-recharge dd{ color: #666; line-height: 20px; padding-bottom: 10px; padding-left: 25px;}
+.sm-cite3{ color: #ff5a00; background: #fef7db; border: solid 1px #fcae42; margin: 0 0 20px;}
+.sm-cite4{ padding: 10px 30px 10px 60px; margin: 0; height: 40px; line-height: 20px; overflow: hidden; background: #fef7db url(http://ui.91jinrong.com/cs/images/bg-recharge-cite.png) 15px center no-repeat;}
+.btn-yzm{ height: 34px; line-height: 34px; padding: 0 10px; font-size: 14px;}
+	.btn-yzm-c{ background: #0098d9; color: #fff;}
+.box-card-change{ position: relative; padding-bottom: 10px;}
+.pro-form-t{ float: left; display: inline; line-height: 42px;}
+.card-mes{ display: none; position: absolute; left: 68px; top: 42px; border: solid 1px #e5e5e5; border-top: none; background: #fff; cursor: pointer;}
+	.card-mes li{ float: left; display: inline; width: 100%; line-height: 40px;}
+		.card-mes li:hover,.card-mes li:hover cite{ color: #0098d9;}
+	.card-mes cite{ color: #999; font-size: 12px;}
+	.card-mes img{ float: left; display: inline; width: 110px; height: 40px; margin: 0 10px;}
+	.card-mes .bd-bank-card{ color: #f00; padding-left: 20px;}
+	.bd-btn-bank{ height: 38px; line-height: 38px; font-size: 16px; padding: 0 20px;}
+.card-sel{ position: absolute; right: 0; top: 0; width: 40px; height: 40px; background: #ccc url(http://ui.91jinrong.com/cs/images/bg-card-icon01.png) center center no-repeat; cursor: pointer;}
+/*box-btn-fn*/
+.box-btn-fn{ margin: 0 20px; text-align: right; padding-bottom: 20px; border-bottom: solid 1px #e5e5e5; background: url(http://ui.91jinrong.com/cs/images/bg-fn-slogan.png) left 10px no-repeat;}
+	.box-btn-fn .lc-btn-defult{ margin-left: 10px;}
+/*property-num*/
+.property-num{ border-bottom: solid 1px #e5e5e5; padding: 30px 0;}
+	.property-num li{ float: left; display: inline; width: 210px; text-align: center; font-size: 16px; line-height: 16px; color: #555;}
+	.property-num li.operation{ width: auto; padding-top: 42px; color: #999; font-size: 40px;}
+	.property-num li strong{ display: block; padding-top: 20px; font-size: 30px; line-height: 30px; font-weight: bold;}
+	.property{ color: #ea544a;}
+.property-em{ position: relative;}
+	.property-i{ position: absolute; right: -18px; top: -3px; cursor: pointer; width: 13px; height: 13px; background: url(http://ui.91jinrong.com/cs/images/bg-property.png) 0 0 no-repeat;}
+		.property-i:hover{ background-position: 0 -13px;}
+	.property-t{ display: none; position: absolute; left: -18px; top: 25px; width: 220px; height: 40px; overflow: hidden; padding: 15px 11px 0; background: url(http://ui.91jinrong.com/cs/images/bg-property-t.png) 0 0 no-repeat; line-height: 16px; font-size: 12px; color: #666;}
+	.property-num li .property-t{ text-align: left;}
+/*box-record-menu*/
+.record-menu{ border-bottom: solid 1px #e5e5e5; height: 40px;}
+.record-menu li{ float: left; display: inline; font-size: 14px;}
+	.record-menu li a{ display: block; color: #666; padding: 0 45px; height: 40px; line-height: 40px; border-right:solid 1px #e5e5e5; -webkit-transition:background 0.2s ease-in-out; -moz-transition:background 0.2s ease-in-out; transition:background 0.2s ease-in-out;}
+	.record-menu li.active a,.record-menu li a:hover{ background: #0098d9; color: #fff;}
+.box-record-text .hidden{ display: none;}
+.record-text{ margin: 0 20px;}
+.record-table{ width: 100%; font-size: 14px; color: #555;}
+.record-table th{ border-bottom: dashed 1px #e5e5e5; text-align: left; line-height: 40px;}
+.record-table tr{border-bottom: solid 1px #e5e5e5;}
+.record-table tr,.record-table td{ -webkit-transition:background 0.2s ease-in-out; -moz-transition:background 0.2s ease-in-out; transition:background 0.2s ease-in-out;}
+.record-table td{ line-height: 40px;}
+.record-table td.data-time{ display: block; padding: 0 25px; width: 250px; height: 40px; overflow: hidden;}
+.record-table th.data-time{ padding: 0 25px; width: 250px;}
+.record-table .data-money{ width: 220px; text-align: center;}
+.data-name,.record-table th.data-name{ width: 380px; text-align: center;}
+.record-table tr:hover td{ background: #f1f1f1; color: #0098d9;}
+.record-table a{ color: #555;}
+.record-table tr:hover a{ color: #0098d9;}
+/*error form*/
+.form-error{ color: #f00; margin: 0 10px;}
+.input-error{ background:#fff; border-color: #f00; -webkit-box-shadow : 0 0 2px #f00; -moz-box-shadow : 0 0 2px #f00; box-shadow : 0 0 2px #f00;}
+.input-error:focus{ border-color: #f00; -webkit-box-shadow : 0 0 2px #f00; -moz-box-shadow : 0 0 2px #f00; box-shadow : 0 0 2px #f00;}
+/*popup-form*/
+.user-popup{ display: none; position: fixed; left: 50%; top: 50%; z-index: 995; width: 530px; height: 245px; overflow: hidden; margin: -125px 0 0 -275px; padding: 0 15px; background: #fff; border-top: solid 5px #0098d9;}
+.user-black{ display: none; position: fixed; left: 0; top: 0; z-index: 994; background: rgba(0,0,0,0.6); height: 100%; width: 100%;}
+.user-close{ position: absolute; right: 15px; top: 10px; width: 30px; height: 30px; line-height: 30px; background: #e5e5e5; color: #fff; text-align: center;cursor: pointer; font-size: 16px; font-family: Verdana; -webkit-transition:background 0.2s ease-in-out; -moz-transition:background 0.2s ease-in-out; transition:background 0.2s ease-in-out;}
+	.user-close:hover{ background: #0098d9;}
+.user-p-t{ padding: 15px 0 15px 15px; position: relative; border-bottom: solid 1px #ccc; font-size: 18px; line-height: 18px; color: #555;}
+	.user-p-t i{ position: absolute; left: 0; top: 15px; width: 5px; height: 18px; background: #0098d9;}
+.user-popup-text{ padding-top: 50px; text-align: center; color: #555; font-weight: bold;}
+	.user-popup-text p{ padding-bottom: 20px; font-size: 16px;}
+	.user-popup-text .lc-btn{ font-weight: normal; margin-right: 15px;}
+.user-popup-icon{ display: inline-block; width: 30px; height: 30px; margin-right: 10px; vertical-align: -8px; background: url(http://ui.91jinrong.com/cs/images/user-popup-icon01.png) 0 0 no-repeat;}
+/*font*/
+.login,
+.box-fsh,
+.use-menu,
+.bank-popup,
+.use-nav,
+.login-t,
+.change-tel,
+.user-popup{ font-family:"Microsoft Yahei";}
+.login,
+.box-fsh{ color: #555;}
+.login-t a:hover,
+.login-form p a:hover{ color: #f08012;}/*橙*/
+.login-form p a,
+.bank-popup h3,
+.bank-list{ color: #0098d9;}/*蓝*/

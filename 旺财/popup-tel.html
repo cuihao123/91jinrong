@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>个人中心</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<link rel="shortcut icon" href="images/icon-wc.ico" type="image/vnd.microsoft.icon">
+<link href="style/reset.css" rel="stylesheet"/>
+<link href="style/layout.css" rel="stylesheet"/>
+<link href="style/common.css" rel="stylesheet"/>
+<link href="style/model-index.css" rel="stylesheet"/>
+<style>
+body,html{ background: transparent;}
+</style>
+</head>
+<body>
+<div class="popup pop-fn">
+	<h3>修改手机认证</h3>
+	<div class="popup-info clearfix">
+		<cite>手机认证后方可进行投资、充值和提现<br/>如果更换手机号，请及时修改手机认证，以保护账户安全</cite>
+		<p>
+			<span class="form-t">身份证：</span>
+			<input type="text" class="a-input pop-input" placeholder="请输入身份证号码">
+			<i class="error-warning">错误信息</i>
+		</p>
+		<p>
+			<span class="form-t">原手机号码：</span>
+			123456789
+		</p>
+		<p>
+			<span class="form-t">原手机验证：</span>
+			<input type="text" class="a-input pop-input pop-yzm" placeholder="请输入验证码">
+			<input type="button" class="btn btn-yzm" value="获取验证码">
+			<i class="error-warning">错误信息</i>
+		</p>
+		<p>
+			<span class="form-t">&nbsp;</span>
+			<input type="button" class="btn" value="下一步">
+		</p>
+	</div>
+</div>
+
+<script src="script/jquery-1.11.1.min.js"></script>
+<script src="script/jquery.form.js"></script>
+<script>
+$('.btn').click(function(){
+	alert('关闭事件');
+	$('.close', parent.document).click();
+});
+
+</script>
+</body>
+</html>

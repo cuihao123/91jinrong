@@ -1,0 +1,517 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>个人中心</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<link rel="shortcut icon" href="images/icon-wc.ico" type="image/vnd.microsoft.icon">
+<link href="style/reset.css" rel="stylesheet"/>
+<link href="style/layout.css" rel="stylesheet"/>
+<link href="style/common.css" rel="stylesheet"/>
+<link href="style/model-index.css" rel="stylesheet"/>
+<style>
+
+.popup{ position: relative; left: 0; top: 0; margin: 0 0 30px;}
+
+body,html{ background: transparent;}
+</style>
+</head>
+<body>
+<div class="popup pop-tip">
+	<h3>验证码</h3>
+	<div class="popup-info">
+		<div class="pop-status">
+			<span class="wrong"></span>
+		</div>
+		<div class="pop-status-text">
+			<p><strong>您输入的验证码有误</strong></p>
+			<p><a href="#">确定</a></p>
+		</div>
+	</div>
+	<i class="close">x</i>
+</div>
+<div class="popup pop-tip">
+	<h3>消息</h3>
+	<div class="popup-info">
+		<div class="pop-status">
+			<span class="wrong"></span>
+		</div>
+		<div class="pop-status-text">
+			<p><strong>请先进行实名认证</strong></p>
+			<p><a href="#">确定</a></p>
+		</div>
+	</div>
+	<i class="close">x</i>
+</div>
+
+<div class="popup pop-tip">
+	<h3>修改邮箱</h3>
+	<div class="clearfix">
+		<div class="pop-status">
+			<span class="right"></span>
+		</div>
+		<div class="pop-status-text pop-email-text">
+			<p><strong>邮件已经发送</strong></p>
+		</div>
+		<p class="pop-email-p"><em>2</em>秒后自动跳转<br/>如果没有跳转，请手动点击链接，<a href="#">点击这里</a></p>
+	</div>
+	<i class="close">x</i>
+</div>
+
+<div class="popup pop-tip">
+	<h3>修改邮箱</h3>
+	<div class="clearfix">
+		<div class="pop-status">
+			<span class="wrong"></span>
+		</div>
+		<div class="pop-status-text pop-email-text">
+			<p><strong>邮箱已存在</strong></p>
+		</div>
+		<p class="pop-email-p"><a href="#" class="btn">确认</a></p>
+	</div>
+	<i class="close">x</i>
+</div>
+
+<div class="popup pop-tip">
+	<h3>充值</h3>
+	<div class="clearfix">
+		<div class="pop-status">
+			<span class="right"></span>
+		</div>
+		<div class="pop-status-text">
+			<p><strong>恭喜您充值成功</strong></p>
+			<p><a href="#">去理财</a><a href="#">查看充值记录</a></p>
+		</div>
+	</div>
+	<i class="close">x</i>
+</div>
+
+<div class="popup pop-tip">
+	<h3>提现</h3>
+	<div class="popup-info-cash clearfix">
+		<div class="pop-status">
+			<span class="right"></span>
+		</div>
+		<div class="pop-status-text">
+			<p><strong>您已成功提交申请！</strong></p>
+			<p>资金将在1~2个工作日内到账，<br/>如有疑问，欢迎联系<em>400-991-9591</em></p>
+			<p><a href="#">去理财</a><a href="#">查看提现记录</a></p>
+		</div>
+	</div>
+	<i class="close">x</i>
+</div>
+
+<div class="popup pop-tip">
+	<h3>修改银行卡</h3>
+	<div class="popup-info-bank clearfix">
+		<h4>您好，为了保障您的账户资金安全，暂时不支持自助修改银行卡。<br/>如需修改，请与您的理财顾问联系。</h4>
+		<p>电话：<em>400-991-9591</em></p>
+		<p>QQ：<span><script src="http://wpa.b.qq.com/cgi/wpa.php?key=XzkzODA1NzM2N18xNjkxNzNfNDAwOTkxOTU5MV8" type="text/javascript" charset="utf-8"></script></span></p>
+	</div>
+	<i class="close">x</i>
+</div>
+
+<div class="popup pop-tip">
+	<h3>修改邮箱</h3>
+	<div class="popup-info clearfix">
+		<h4>点击发送激活邮件后,请点击邮箱里的链接地址绑定成功.<em>如果您没有收到邮件,请先检查是否在垃圾箱中</em>.10分钟内未收到邮件,请再次点击发送激活邮件.</h4>
+		<p>
+			<span class="form-t">邮箱：</span>
+			<input type="text" class="a-input pop-input" value="">
+			<i class="error-warning">错误信息</i>
+		</p>
+		<p>
+			<span class="form-t">&nbsp;</span>
+			<input type="button" class="btn" value="发送激活邮件">
+		</p>
+	</div>
+	<i class="close">x</i>
+</div>
+
+<div class="popup pop-fn">
+	<h3>实名认证</h3>
+	<div class="popup-info clearfix">
+		<cite>实名认证后方可进行投资、充值和提现<br/>实名认证后不可修改</cite>
+		<p>
+			<span class="form-t">姓名：</span>
+			<input type="text" class="a-input pop-input pop-name" placeholder="姓名">
+			<i class="error-warning">错误信息</i>
+		</p>
+		<p>
+			<span class="form-t">身份证：</span>
+			<input type="text" class="a-input pop-input" placeholder="请输入身份证号码">
+			<i class="error-warning">错误信息</i>
+		</p>
+		<p>
+			<span class="form-t">&nbsp;</span>
+			<input type="button" class="btn" value="确认">
+		</p>
+	</div>
+	<i class="close">x</i>
+</div>
+
+<div class="popup pop-fn" id="tel">
+	<h3>修改手机认证</h3>
+	<div class="popup-info clearfix">
+		<cite>手机认证后方可进行投资、充值和提现<br/>如果更换手机号，请及时修改手机认证，以保护账户安全</cite>
+		<p>
+			<span class="form-t">身份证：</span>
+			<input type="text" class="a-input pop-input" placeholder="请输入身份证号码">
+			<i class="error-warning">错误信息</i>
+		</p>
+		<p>
+			<span class="form-t">原手机号码：</span>
+			123456789
+		</p>
+		<p>
+			<span class="form-t">原手机验证：</span>
+			<input type="text" class="a-input pop-input pop-yzm" placeholder="请输入验证码">
+			<input type="button" class="btn btn-yzm" value="获取验证码">
+			<i class="error-warning">错误信息</i>
+		</p>
+		<p>
+			<span class="form-t">&nbsp;</span>
+			<input type="button" class="btn" value="下一步">
+		</p>
+	</div>
+	<i class="close">x</i>
+</div>
+
+<div class="popup pop-fn">
+	<h3>修改手机认证</h3>
+	<div class="popup-info clearfix">
+		<cite>手机认证后方可进行投资、充值和提现<br/>如果更换手机号，请及时修改手机认证，以保护账户安全</cite>
+		<p>
+			<span class="form-t">新手机号码：</span>
+			<input type="text" class="a-input pop-input" placeholder="请输入手机号码">
+			<i class="error-warning">错误信息</i>
+		</p>
+		<p>
+			<span class="form-t">新手机验证：</span>
+			<input type="text" class="a-input pop-input pop-yzm" placeholder="请输入验证码">
+			<input type="button" class="btn btn-yzm" value="获取验证码">
+			<i class="error-warning">错误信息</i>
+		</p>
+		<p>
+			<span class="form-t">&nbsp;</span>
+			<input type="button" class="btn" value="完成">
+		</p>
+	</div>
+	<i class="close">x</i>
+</div>
+
+<div class="popup pop-bank">
+	<h3>添加银行卡</h3>
+	<div class="popup-info clearfix">
+		<h4>温馨提示：91旺财禁止信用卡套现、虚假交易等行为，一经发现将予以处罚，包括但不限于：限制收款、冻结账户。</h4>
+		<p>
+			<span class="form-t">持卡人：</span>
+			持卡人姓名
+		</p>
+		<p>
+			<span class="form-t">银行：</span>
+			<select>
+				<option>工商银行</option>
+				<option>招商银行</option>
+				<option>农业银行</option>
+				<option>浦发银行</option>
+			</select>
+		</p>
+		<p>
+			<span class="form-t">银行卡号：</span>
+			<input type="text" class="a-input pop-input" placeholder="请输入您的卡号">
+			<i class="error-warning">错误信息</i>
+		</p>
+		<p>
+			<span class="form-t">开户城市：</span>
+			<select>
+				<option>北京</option>
+				<option>上海</option>
+				<option>广州</option>
+			</select>
+			<select>
+				<option>海淀区</option>
+				<option>宣武区</option>
+				<option>西城区</option>
+			</select>
+		</p>
+		<p class="addr">
+			<span class="form-t">开户行：</span>
+			<input type="text" class="a-input pop-input" placeholder="请输入开户行地址">
+			<span class="address-cite">示例：北京分行中关村支行知春路分理处.如您无法确定开户行信息，请致电银行客服。</span>
+			<i class="error-warning">错误信息</i>
+		</p>
+		<p>
+			<span class="form-t">&nbsp;</span>
+			<input type="button" class="btn" value="完成">
+		</p>
+	</div>
+	<i class="close">x</i>
+</div>
+
+<div class="popup pop-fn">
+	<h3>添加联系地址</h3>
+	<div class="popup-info clearfix">
+		<cite>提示：用于邮寄资料和礼品</cite>
+		<p>
+			<span class="form-t">联系地址：</span>
+			<input type="text" class="a-input pop-input" placeholder="请输入联系地址">
+			<i class="error-warning">错误信息</i>
+		</p>
+		<p>
+			<span class="form-t">邮编：</span>
+			<input type="text" class="a-input pop-input pop-yzm" placeholder="请输入邮编">
+			<i class="error-warning">错误信息</i>
+		</p>
+		<p>
+			<span class="form-t">&nbsp;</span>
+			<input type="button" class="btn" value="确认">
+		</p>
+	</div>
+	<i class="close">x</i>
+</div>
+
+<div class="popup pop-fn">
+	<h3>修改联系地址</h3>
+	<div class="popup-info clearfix">
+		<cite>提示：用于邮寄资料和礼品</cite>
+		<p>
+			<span class="form-t">联系地址：</span>
+			详细地址详细地址详细地址详细地址详细地址
+		</p>
+		<p>
+			<span class="form-t">邮编：</span>
+			123456789
+		</p>
+		<p>
+			<span class="form-t">手机号码：</span>
+			123456789
+		</p>
+		<p>
+			<span class="form-t">验证码：</span>
+			<input type="text" class="a-input pop-input pop-yzm" placeholder="请输入验证码">
+			<input type="button" class="btn btn-yzm" value="获取验证码">
+			<i class="error-warning">错误信息</i>
+		</p>
+		<p>
+			<span class="form-t">&nbsp;</span>
+			<input type="button" class="btn" value="下一步">
+		</p>
+	</div>
+	<i class="close">x</i>
+</div>
+
+<div class="popup pop-fn">
+	<h3>修改联系地址</h3>
+	<div class="popup-info clearfix">
+		<cite>提示：用于邮寄资料和礼品</cite>
+		<p>
+			<span class="form-t">联系地址：</span>
+			<input type="text" class="a-input pop-input" placeholder="请输入联系地址">
+			<i class="error-warning">错误信息</i>
+		</p>
+		<p>
+			<span class="form-t">邮编：</span>
+			<input type="text" class="a-input pop-input pop-yzm" placeholder="请输入邮编">
+			<i class="error-warning">错误信息</i>
+		</p>
+		<p>
+			<span class="form-t">&nbsp;</span>
+			<input type="button" class="btn" value="完成">
+		</p>
+	</div>
+	<i class="close">x</i>
+</div>
+
+<div class="popup pop-fn">
+	<h3>重置交易密码</h3>
+	<div class="popup-info clearfix">
+		<p>
+			<span class="form-t">手机号码：</span>
+			<input type="text" class="a-input pop-input" placeholder="请输入手机号码">
+			<i class="error-warning">错误信息</i>
+		</p>
+		<p>
+			<span class="form-t">验证码：</span>
+			<input type="text" class="a-input pop-input pop-yzm" placeholder="请输入验证码">
+			<input type="button" class="btn btn-yzm" value="获取验证码">
+			<i class="error-warning">错误信息</i>
+		</p>
+		<p>
+			<span class="form-t">新密码：</span>
+			<input type="password" class="a-input pop-input" placeholder="请输入新交易密码">
+			<i class="error-warning">错误信息</i>
+		</p>
+		<p>
+			<span class="form-t">重复密码：</span>
+			<input type="password" class="a-input pop-input" placeholder="请再次输入新交易密码">
+			<i class="error-warning">错误信息</i>
+		</p>
+		<p>
+			<span class="form-t">&nbsp;</span>
+			<input type="button" class="btn" value="确认">
+		</p>
+	</div>
+	<i class="close">x</i>
+</div>
+
+<div class="popup pop-fn">
+	<h3>修改交易密码</h3>
+	<div class="popup-info clearfix">
+		<p>
+			<span class="form-t">旧密码：</span>
+			<input type="text" class="a-input pop-input" placeholder="请输入旧交易密码">
+			<i class="error-warning">错误信息</i>
+		</p>
+		<p>
+			<span class="form-t">新密码：</span>
+			<input type="password" class="a-input pop-input" placeholder="6~20位字符,包含数字、字母2种">
+			<i class="error-warning">错误信息</i>
+		</p>
+		<p>
+			<span class="form-t">重复密码：</span>
+			<input type="password" class="a-input pop-input" placeholder="请再次输入新交易密码">
+			<i class="error-warning">错误信息</i>
+		</p>
+		<p>
+			<span class="form-t">验证码：</span>
+			<input type="text" class="a-input pop-input pop-yzm" placeholder="请输入验证码">
+			<input type="button" class="btn btn-yzm" value="获取验证码">
+			<i class="error-warning">错误信息</i>
+		</p>
+		<p>
+			<span class="form-t">&nbsp;</span>
+			<input type="button" class="btn" value="确认">
+		</p>
+	</div>
+	<i class="close">x</i>
+</div>
+
+<div class="popup pop-fn">
+	<h3>忘记密码</h3>
+	<div class="popup-info clearfix">
+		<p>
+			<span class="form-t">手机号码：</span>
+			<input type="text" class="a-input pop-input" placeholder="请输入手机号码">
+			<i class="error-warning">错误信息</i>
+		</p>
+		<p>
+			<span class="form-t">验证码：</span>
+			<input type="text" class="a-input pop-input pop-yzm" placeholder="请输入验证码">
+			<input type="button" class="btn btn-yzm" value="获取验证码">
+			<i class="error-warning">错误信息</i>
+		</p>
+		<p>
+			<span class="form-t">新密码：</span>
+			<input type="password" class="a-input pop-input" placeholder="请输入新密码">
+			<i class="error-warning">错误信息</i>
+		</p>
+		<p>
+			<span class="form-t">重复密码：</span>
+			<input type="password" class="a-input pop-input" placeholder="请再次输入新密码">
+			<i class="error-warning">错误信息</i>
+		</p>
+		<p>
+			<span class="form-t">&nbsp;</span>
+			<input type="button" class="btn" value="确认">
+		</p>
+	</div>
+	<i class="close">x</i>
+</div>
+
+
+<div class="popup pop-zq">
+	<h3>债权转让</h3>
+	<div class="popup-info clearfix">
+		<p>
+			<span class="form-t">应收利息：</span>
+			<em>100.00</em>元
+		</p>
+		<p>
+			<span class="form-t">剩余期限：</span>
+			20.00天
+		</p>
+		<p>
+			<span class="form-t">最低转让：</span>
+			<em>100.00</em>元
+		</p>
+		<p>
+			<span class="form-t">最高价格：</span>
+			<em>100.00</em>元
+		</p>
+		<p>
+			<span class="form-t">转让价格：</span>
+			<input type="text" class="a-input pop-input" placeholder="请输入价格">
+			<i class="error-warning">错误信息</i>
+		</p>
+		<p>
+			<span class="form-t">交易密码：</span>
+			<input type="password" class="a-input pop-input" placeholder="请输入交易密码">
+			<i class="error-warning">错误信息</i>
+		</p>
+		<p>
+			<span class="form-t">&nbsp;</span>
+			<input type="button" class="btn" value="确定">
+		</p>
+		<dl class="zq-dl">
+			<dt>债权转让规则</dt>
+			<dd>1. 正在转让的债权若有还款，则此转让会自动撤销，进入到可以转让和已取消的债权列表中。</dd>
+			<dd>2. 债权转让订单期限为3天。若3天无人购买，债权转让订单将自动取消。</dd>
+			<dd>3. 每个债权转让最多可取消3次，3次转让失败则此债权将不能转让。转让人只能获得此债权的到期回款。</dd>
+			<dd>4. 转让债权免收交易手续费。</dd>
+			<dd>5. 债权的转让价格下限为本金，上限为本金+应收利息。如投资本金1000元，年利率10%，投资周期1个月，第n天时转让的最高价格为1000+1000*10%*n/360。</dd>
+		</dl>
+	</div>
+	<i class="close">x</i>
+</div>
+
+<div class="popup pop-fn">
+	<h3>登录旺财</h3>
+	<div class="pop-login clearfix">
+		<p class="clearfix">
+			<i class="icon-name"></i>
+			<input type="text" class="a-input focus-input" id="username" placeholder="手机/用户名/邮箱">
+			<span class="icon-del"></span>
+			<i class="error">错误信息</i>
+		</p>
+		<p class="clearfix">
+			<i class="icon-pwd"></i>
+			<input type="password" class="a-input focus-input" id="pwd" placeholder="密码">
+			<span class="icon-del"></span>
+		</p>
+		<p class="yzm clearfix">
+			<i class="icon-exa"></i>
+			<input type="text" class="a-input input-exa" id="exa" placeholder="验证码">
+			<span class="icon-yzm icon-del"></span>
+			<img src="images/verifycode.jpg" id="valicodeImg" alt="点击刷新" onclick="this.src='/common/verifycode?t='+ Math.random()" align="absmiddle" width="64" height="40" style="float:left; margin-right:10px; cursor:pointer">
+			<a href="javascript:void(0);" onclick="javascript:$('#valicodeImg').click();" class="exa-change">换一张</a>
+		</p>
+		<p class="none">
+			<input type="button" onclick="checkForm()" value="立即登录" class="btn"/>
+		</p>
+		<p class="text-r"><a href="/user/to_register">马上注册</a>&nbsp;|&nbsp;<a href="/user/forgot_password">忘记密码</a></p>
+	</div>
+	<i class="close">x</i>
+</div>
+
+<div class="popup pop-tip">
+	<h3>充值结果</h3>
+	<div class="popup-info-suc clearfix">
+		<p>请您在新的网银页面进行支付，支付完成前请不要关闭窗口</p>
+		<p>
+			<a href="" class="">已完成支付</a>
+			<a href="" class="">支付遇到问题</a>
+		</p>
+	</div>
+	<i class="close">x</i>
+</div>
+<div class="bg-black"></div>
+<!--
+<script src="script/jquery-1.11.1.min.js"></script>
+<script src="script/jquery.form.js"></script>
+<script src="script/public-model.js"></script>
+<script src="script/fn-index.js"></script>
+-->
+</body>
+</html>

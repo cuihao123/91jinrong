@@ -1,0 +1,422 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>旺财首页</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<link rel="shortcut icon" href="images/icon-wc.ico" type="image/vnd.microsoft.icon">
+<link href="style/reset.css" rel="stylesheet"/>
+<link href="style/layout.css" rel="stylesheet"/>
+<link href="style/common.css" rel="stylesheet"/>
+<link href="style/model-index.css" rel="stylesheet"/>
+</head>
+<body>
+<ul class="mod-top">
+	<li class="vip drop-down">
+		<a href="javascript:;" class="drop-down-menu"></a>
+		<div class="mod-vip-text drop-down-box">
+			<!--  未登录
+			<p><a href="/?user&amp;q=login">登录</a></p>
+			<p>享受专属顾问服务</p>
+			<p class="mod-vip-tel">4009919591-1005</p>
+			<p class="mod-vip-border">(7×24小时为您服务)</p>
+			-->
+			<!-- 已登录 -->
+			<p><img src="images/pic04.jpg"/></p>
+			<p>顾问：施浩</p>
+			<p>工号：1005</p>
+			<p class="mod-vip-tel">4009919591-1005</p>
+			<p class="mod-vip-border">(7×24小时为您服务)</p>
+			<!-- 已登录 -->		
+		</div>
+	</li>
+	<li class="qq drop-down">
+		<a href="javascript:;" class="drop-down-menu"></a>
+		<div class="mod-qq-text drop-down-box">
+			<script src="http://wpa.b.qq.com/cgi/wpa.php?key=XzkzODA1NzM2N18xNjkxNzNfNDAwOTkxOTU5MV8" type="text/javascript" charset="utf-8"></script>
+		</div>
+	</li>
+	<li class="wx drop-down">
+		<a href="javascript:;" class="drop-down-menu"></a><div class="mod-wx-text drop-down-box"></div>
+	</li>
+</ul>
+<!-- mod-top over -->
+<div class="box-header">
+	<div class="box clearfix">
+		<div class="top-tel">
+			<i class="icon icon-tel"></i>
+			<em>400-991-9591</em>
+			<span>(7×24小时)</span>
+			<a href="http://weibo.com/91wangcai" title="旺财微博" class="icon icon-sina" target="_blank"></a>
+			<div class="wc-weixin drop-down">
+				<i class="icon icon-weixin drop-down-menu" title="旺财微信"></i>
+				<span class="drop-down-box"><img src="images/sns/top_weixin.png"></span>
+			</div>
+		</div>
+		<!-- top-tel over -->
+		<div class="top-login">
+			<ul class="clearfix">
+				<li><a href="/user/account/get">用户名称</a></li>
+				<li><a href="javascript:void(0)" onclick="exit_user()">退出</a></li>
+				<li><a href="/user/recharge/to">充值</a></li>
+				<li><a href="/user/message">消息<em>[2]</em></a></li>
+				<li><a href="/user/to_login" title="登录">登录</a></li>
+				<li><a href="/user/to_register" title="注册">注册</a></li>
+				<li class="drop-down">
+					<a href="#" title="" class="drop-down-menu"><i class="icon icon-phone"></i>手机旺财</a>
+					<div class="mob-wc-box drop-down-box">
+						<span class="mob-wc-img"></span>
+						<p>旺财客户端</p>
+						<p><a href="http://cdn.91wangcai.com/new-wangcai-2014-12-08.apk"></a></p>
+					</div>
+				</li>
+				<li class="drop-down last">
+					<a href="#" title="91金融" class="drop-down-menu">91金融<i class="icon icon-selectB"></i></a>
+					<p class="link-wc-box drop-down-box">
+						<a href="http://www.91jinrong.com" target="_blank">91金融</a>
+						<a href="http://zzb.91jinrong.com" target="_blank">增值宝</a>
+						<a href="http://www.91dk.com" target="_blank">91贷款</a>
+						<a href="http://jrq.91jinrong.com/" target="_blank">金融圈</a>
+						<a href="http://chexian.91jinrong.com/" target="_blank">车险通</a>
+					</p>
+				</li>
+			</ul>
+		</div>
+		<!-- -->
+	</div>
+	<!-- box over -->
+</div>
+<!-- box-header over -->
+<div class="box-logo">
+	<div class="box clearfix">
+		<h2 class="logo"><a href="/" title="91旺财 最安全的高收益互联网理财平台">91旺财 最安全的高收益互联网理财平台</a></h2>
+		<div class="user-account drop-down">
+			<i class="icon icon-selectC"></i><a href="#" class="drop-down-menu" title="我的账户">我的账户</a><i class="icon icon-selectD"></i>
+			<p class="drop-down-box">
+				<a href="/user/account/get">账户概况</a>
+				<a href="/user/recharge/to">充值提现</a>
+				<a href="/user/financial/chart">理财管理</a>
+				<a href="/user/redbonus">红包奖励</a>
+				<a href="/user/message">消息中心</a>
+				<a href="/user/setup">账户设置</a>
+			</p>
+		</div> 
+	</div>
+</div>
+<!-- box-logo over -->
+<div class="box-nav">
+	<div class="box">
+		<ul class="nav clearfix">
+	        <li class="active"><a href="/">首页</a></li>
+	        <li><a href="/list">我要理财</a></li>
+	        <li><a href="/common/zt">新手专区</a></li>
+	        <li><a href="/about/index">关于我们</a></li>
+		</ul>
+	</div>
+</div>
+<!-- box-nav over -->
+<div class="box-index-login">
+	<div class="box rela">
+		<div class="index-login tab">
+			<!-- 未登录 -->
+			<ul class="tab-menu index-login-menu clearfix">
+				<li class="active">注册</li>
+				<li>登录</li>
+			</ul>
+
+			<div class="tab-box">
+				<div class="index-register">
+					<h4>91旺财年化收益</h4>
+					<p class="num"><em>9</em>%<em>~12</em>%</p>
+					<p>
+						<em>30</em>倍活期存款收益
+						<em>3.27</em>倍定期存款收益
+					</p>
+					<p>
+						<a href="/user/to_register" class="btn">免费注册</a>
+					</p>
+					<p class="text-r"><a href="/user/to_login">已有账号？立即登录</a></p>
+				</div>
+				<div class="tab-login hidden">
+					<p class="clearfix">
+						<i class="icon-name"></i>
+						<input type="text" class="a-input" id="username" placeholder="手机/用户名/邮箱">
+						<span class="icon-del"></span>
+						<i class="error">请您填写手机/用户名/邮箱</i>
+					</p>
+					<p class="clearfix">
+						<i class="icon-pwd"></i>
+						<input type="password" class="a-input" id="pwd" placeholder="密码">
+						<span class="icon-del"></span>
+					</p>
+					<p class="clearfix">
+						<i class="icon-exa"></i>
+						<input type="text" class="a-input input-exa" id="exa" placeholder="验证码">
+						<span class="icon-yzm icon-del"></span>
+						<img src="images/verifycode.jpg" id="valicodeImg" alt="点击刷新" onclick="this.src='/common/verifycode?t='+ Math.random()" align="absmiddle" width="64" height="40" style="float:left; margin-right:10px; cursor:pointer">
+						<a href="javascript:void(0);" onclick="javascript:$('#valicodeImg').click();" class="exa-change">换一张</a>
+					</p>
+					<p>
+						<input type="button" onclick="checkForm()" value="登录" class="btn"/>
+					</p>
+					<p class="text-r"><a href="/user/forgot_password">找回密码</a></p>
+				</div>
+			</div>
+			<!-- 未登录 -->
+
+			<!--  登录成功后
+			<h4 class="user-login-t"><em>用户名称</em>，欢迎您！</h4>
+			<p class="user-login-p">总&nbsp;&nbsp;资&nbsp;产：<em>200.00</em>元</p>
+			<p class="user-login-p">账户余额：<em>0</em>元</p>
+			<p class="user-login-p">
+				<a href="/user/account/get" class="btn">查看我的账户</a>
+			</p>
+			-->
+		</div>
+		<!-- index-login over-->
+	</div>
+	<!-- box -->
+</div>
+<!-- box-index-login over -->
+
+<div class="index-pic-box">
+	<div class="pic-box">
+		<ul class="pic clearfix">
+			<li style="background:url(images/banner/14.jpg) center 0 no-repeat;"><a href="http://www.91wangcai.com/about/report_detail?media_id=1216" target="_blank"></a></li>
+        	<li style="background:url(images/banner/1.jpg) center 0 no-repeat;"><a href="javascript:void(0)" id="newlayer"></a></li>
+           	<li style="background:url(images/banner/4.jpg) center 0 no-repeat;"><a href="/zt/app"  target="_blank"></a></li>
+        	<li style="background:url(images/banner/6.jpg) center 0 no-repeat;"><a href="/about/report_detail?media_id=383"  target="_blank"></a></li>
+        	<li style="background:url(images/banner/7.jpg) center 0 no-repeat;"><a href="http://www.91jinrong.com/rzzt"  target="_blank"></a></li>
+        	<li style="background:url(images/banner/3.jpg) center 0 no-repeat;"><a href="http://www.91jinrong.com/zhuanti/91jinrong-zhuanti/liujiazui/index.html"  target="_blank"></a></li>
+            <li style="background:url(images/banner/5.jpg) center 0 no-repeat;"><a href="http://www.91jinrong.com/zhuanti/91jinrong-zhuanti/jinrongxieban/index.html"  target="_blank"></a></li>
+            <li style="background:url(images/banner/8.jpg) center 0 no-repeat;"><a href="/about/report_detail?media_id=960"  target="_blank"></a></li>
+		</ul>
+		<div class="box-pic-menu">
+			<ul class="pic-menu">
+				<li class="active">1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+				<li>5</li>
+				<li>6</li>
+				<li>7</li>
+				<li>8</li>
+			</ul>
+		</div>
+	</div>
+	<!-- pic-box over -->
+</div>
+<!-- index-pic-box over -->
+<div class="box-news">
+	<div class="box clearfix">
+		<div class="float-side clearfix">
+			<h4 class="title"><a href="/about/media_reports" title="媒体报道">媒体报道</a></h4>
+			<div class="pic-media">
+				
+					<ul class="list-pic-media">
+						<li style="background:url(http://img.91wangcai.com/data/upfiles/images/2014-12/24/936_articles_article_1419385615837185.jpg)">
+							<a target="_blank" href="/about/report_detail?media_id=1240"><span>《环球网》：91金融慈善行——“温暖衣冬 让爱随行”</span></a>
+						</li>
+						<li style="background:url(http://img.91wangcai.com/data/upfiles/images/2014-12/23/936_articles_article_1419328804346845.jpg)">
+							<a target="_blank" href="/about/report_detail?media_id=1239"><span>《极客金融》：91钱包即将上线 三大秘密武器齐亮相</span></a>
+						</li>
+						<li style="background:url(http://img.91wangcai.com/data/upfiles/images/2014-12/19/936_articles_article_1418974172264284.jpg)">
+							<a target="_blank" href="/about/report_detail?media_id=1216"><span>91旺财当选北京市网贷行业协会副会长单位 </span></a>
+						</li>
+						<li style="background:url(http://img.91wangcai.com/data/upfiles/images/2014-12/18/936_articles_article_1418876834475557.jpg)">
+							<a target="_blank" href="/about/report_detail?media_id=1206"><span>《中国日报》：91金融发力移动端 将推理财APP“91钱包”</span></a>
+						</li>
+						<li style="background:url(http://img.91wangcai.com/data/upfiles/images/2014-12/18/936_articles_article_1418871845375751.jpg)">
+							<a target="_blank" href="/about/report_detail?media_id=1204"><span>《新浪财经》：91金融与海通证券联袂获得第十五届中国金融IT创新评选大奖</span></a>
+						</li>
+						<li style="background:url(http://img.91wangcai.com/data/upfiles/images/2014-12/15/936_articles_article_1418622715162293.jpg)">
+							<a target="_blank" href="/about/report_detail?media_id=1184"><span>《艾瑞》：91金融许泽玮“首届互联网证券金融论坛”演讲：互联网的规则是用来打破的</span></a>
+						</li>
+					</ul>
+					<!-- list-pic-media -->
+					<a href="javascript:;" class="prev" title="上一张"></a>
+					<a href="javascript:;" class="next" title="下一张"></a>
+				<!-- box-pic-media over -->
+			</div>
+			<!-- pic-media over -->
+			<ul class="media-list clearfix">
+				<li>
+					<a target="_blank" href="/about/report_detail?media_id=1240">
+						<span>《环球网》：91金融慈善行——“温暖衣冬 让爱随行”</span><em>2014-12-23</em>
+					</a>
+				</li>
+				<li>
+					<a target="_blank" href="/about/report_detail?media_id=1239">
+						<span>《极客金融》：91钱包即将上线 三大秘密武器齐亮相</span><em>2014-12-23</em>
+					</a>
+				</li>
+				<li>
+					<a target="_blank" href="/about/report_detail?media_id=1216">
+						<span>91旺财当选北京市网贷行业协会副会长单位 </span><em>2014-12-18</em>
+					</a>
+				</li>
+				<li>
+					<a target="_blank" href="/about/report_detail?media_id=1206">
+						<span>《中国日报》：91金融发力移动端 将推理财APP“91钱包”</span><em>2014-12-18</em>
+					</a>
+				</li>
+				<li>
+					<a target="_blank" href="/about/report_detail?media_id=1204">
+						<span>《新浪财经》：91金融与海通证券联袂获得第十五届中国金融IT创新评选大奖</span><em>2014-12-18</em>
+					</a>
+				</li>
+				<li class="end">
+					<a target="_blank" href="/about/report_detail?media_id=1184">
+						<span>《艾瑞》：91金融许泽玮“首届互联网证券金融论坛”演讲：互联网的规则是用来打破的</span><em>2014-12-15</em>
+					</a>
+				</li>
+			</ul>
+			<!-- media-list over -->
+		</div>
+		<!-- float-side over -->
+		<div class="news">
+			<h4 class="title"><a href="/about/website_reports" title="最新动态">最新动态</a></h4>
+			<p><a href="#"><img src="http://www.91wangcai.com/images/pic/pic01.png"/></a></p>
+			<ul class="news-list clearfix">
+				<li>
+					<a target="_blank" href="/about/report_detail?media_id=1247">【还款公告】12月24日 BJ-DY-428-第九期 到期还款公告</a>
+				</li>
+				<li>
+					<a target="_blank" href="/about/report_detail?media_id=1246">【还款公告】12月24日 BJ-DY-424-第三期 到期还款公告</a>
+				</li>
+				<li>
+					<a target="_blank" href="/about/report_detail?media_id=1245">【还款公告】12月24日 BJ-DY-343-第一期 到期还款公告</a>
+				</li>
+				<li class="end">
+					<a target="_blank" href="/about/report_detail?media_id=1244">【还款公告】12月24日 BJ-DY-432-第六期 到期还款公告</a>
+				</li>
+			</ul>
+		</div>
+		<!-- news over -->
+	</div>
+	<!-- box over -->
+</div>
+<!-- box-news over -->
+
+<div class="box box-pro">
+	<h4 class="title">项目投资<em>工作日上午10点半、下午15点发限额20万以上的项目</em></h4>
+	<div class="pro-list clearfix">
+		<div class="pro-text">
+			<h4><a href="" title="">【BJ-DY-504-第一期】北京某燃气集团,资金周转借款,北京房产足值抵押,手续齐全</a></h4>
+			<ul class="attr clearfix">
+				<li class="first">
+					<em class="num"><span class="em-num" data-num="10.0">0.00</span>%</em>
+					<p>年利率</p>
+				</li>
+				<li>
+					<em class="num"><span>200</span>天</em>
+					<p>项目期限</p>
+				</li>
+				<li>
+					<em><span>200</span>万元</em>
+					<p>项目总额</p>
+				</li>
+				<li>
+					<em><span>20</span>万元</em>
+					<p>投资限额</p>
+				</li>
+			</ul>
+			<!-- attr over -->
+			<div class="mod-pre-num">
+				<p>
+					剩余投资：
+					<em class="mon-num">0.00</em>
+					<span>元</span>
+				</p>
+				<p>
+					<em class="pre-num-box">
+						<i class="pre-box"></i>
+						<em class="pre-num">50%</em>
+					</em>
+				</p>
+			</div>
+			<!-- mod-pre-num over -->
+		</div>
+		<!-- pro-text over -->
+		<div class="box-pro-btn">
+			<a href="#" class="btn">我要赚钱</a>
+			<p>
+				<i class="icon icon-time"></i>
+				还剩<em name="endtime" id="endtime">1419736042</em>
+			</p>
+		</div>
+		<!-- box-pro-btn over -->
+		<i class="hot"></i>
+	</div>
+	<!-- pro-list over -->
+	<div class="pro-list">
+		<div class="pro-text">
+			<h4><a href="" title="">【BJ-DY-504-第一期】北京某燃气集团,资金周转借款,北京房产足值抵押,手续齐全</a></h4>
+			<ul class="attr clearfix">
+				<li class="first">
+					<em class="num"><span class="em-num" data-num="10.0">0.00</span>%</em>
+					<p>年利率</p>
+				</li>
+				<li>
+					<em class="num"><span>200</span>天</em>
+					<p>项目期限</p>
+				</li>
+				<li>
+					<em><span>200</span>万元</em>
+					<p>项目总额</p>
+				</li>
+				<li>
+					<em><span>20</span>万元</em>
+					<p>投资限额</p>
+				</li>
+			</ul>
+			<!-- attr over -->
+			<div class="mod-pre-num">
+				<p>
+					剩余投资：
+					<em class="mon-num">0.00</em>
+					<span>元</span>
+				</p>
+				<p>
+					<em class="pre-num-box">
+						<i class="pre-box"></i>
+						<em class="pre-num">100%</em>
+					</em>
+				</p>
+			</div>
+			<!-- mod-pre-num over -->
+		</div>
+		<!-- pro-text over -->
+		<div class="box-pro-btn">
+			<a href="#" class="btn">我要赚钱</a>
+			<p>
+				<i class="icon icon-time"></i>
+				还剩<em name="endtime" id="endtime">1419736042</em>
+			</p>
+		</div>
+		<!-- box-pro-btn over -->
+		<i class="hot"></i>
+	</div>
+	<!-- pro-list over -->
+	<a href="/list" class="more-pro" title="更多">更多+</a>
+</div>
+<!-- box-pro over -->
+
+<div class="box new-hand">
+	<a href="/common/zt"><img src="images/pic/pic02.png" /></a>
+</div>
+<!-- new-hand over -->
+<div class="box partner">
+	<h4 class="title" title="合作伙伴">合作伙伴</h4>
+	<img src="images/pic/pic03.png" />
+</div>
+<!-- partner over -->
+
+
+<script src="script/jquery-1.11.1.min.js"></script>
+<script src="script/jquery.form.js"></script>
+<script src="script/public-model.js"></script>
+<script src="script/fn-index.js"></script>
+</body>
+</html>

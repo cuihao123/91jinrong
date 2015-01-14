@@ -1,0 +1,46 @@
+@charset "utf-8";
+.box-header{ width: 100%; height: 36px; line-height: 36px; padding: 0; margin: 0; background: #f5f5f5; border-bottom: solid 1px #ccc;}
+.box-footer{ width: 100%; margin-top:30px; padding-bottom: 30px; background: #f7f7f7;}
+.box,
+.box-top,
+.content,
+.box-bottom{ width: 1200px; margin: 0 auto;}
+.box-header,
+.box-footer,
+.content,
+.box-nav,
+.nav,
+.box-copy,
+.box-bg-logo,
+.lc-box{ display: table;}
+.box-top{ height: 36px; overflow: hidden;}
+.box-side{ border: solid 1px #e5e5e5; margin-bottom: 10px;}
+.box-copy{ text-align: center; padding: 20px 0;}
+.copy-text{ width: 1200px; margin:0 auto; text-align: center;}
+.box-bg-logo{ width: 100%; background: #fff;}
+/*box-top*/
+.box-products,
+.box-products h3,
+.box-products ul,
+.box-products li,
+.box-login{ float: left; display: inline; font-size: 14px; color: #555; font-weight: bold;}
+.box-products h3,
+.box-products li{ border-right: solid 1px #ccc;}
+.box-products li{ padding: 0 25px;}
+	.box-products li a{ color: #555;}
+	.box-products li.wc i{ display: inline-block; width: 20px; height: 20px; margin-right:5px; background: url(../images/icon-wc.png) 0 0 no-repeat; vertical-align: -6px;}
+	.box-products li.wc a,.box-products li a:hover{ color: #f08012;}
+.box-login{ float: right; font-weight: normal;}
+	.box-login a{ color: #555;}
+		.box-login a:hover{ color: #f08012;}
+	.box-login .collect{ display: inline-block; background: url(../images/bg-collect.png) left center no-repeat; padding-left: 16px; margin-left:20px;}
+/*logo*/
+.box-logo{ height: 80px; padding-top: 30px; overflow: hidden;}
+.logo{ float: left; display: inline; width: 230px; height: 50px; background: url(../images/logo.png) 0 0 no-repeat;}
+	.logo a{ display: block; width: 100%; height: 100%; text-indent: -9999px;}
+.slogan{ float: left; display: inline; height: 50px; line-height: 50px; background: url(../images/bg-slogan.png) left center no-repeat; margin: 0 0 0 15px; padding-left: 15px; font-size: 30px; color: #231815; font-family:"Microsoft Yahei";}
+.box-tel{ float: right; display: inline; width: 234px; height: 44px; background: url(../images/tel-400.png) 0 0 no-repeat; margin-top: 3px;}
+.box-rz-list{ float: right; display: inline; margin: -4px 20px 0 0; width: 185px; height: 67px; position: relative; overflow: hidden;}
+	.box-rz-list ul{ width: 185px; height: 9999px; position: absolute; left: 0; top: 0;}
+	.box-rz-list li{ float: left; display: inline;}
+	.box-rz-list li img{ display: block;}

@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>91金融超市官网  中国最大的互联网金融服务平台</title>
+<meta name="keywords" content="91金融超市官网  中国最大的互联网金融服务平台">
+<meta name="description" content="91金融超市，为您提供网上贷款，网上理财，网上办理信用卡，网上保险等金融产品及服务，是中国最大的互联网金融服务提供商。">
+<link rel="shortcut icon" href="images/favicon.ico" type="image/vnd.microsoft.icon">
+<link href="style/reset.css" rel="stylesheet"/>
+<link href="style/layout.css" rel="stylesheet"/>
+<link href="style/common.css" rel="stylesheet"/>
+<link href="style/model-login-new.css" rel="stylesheet"/>
+</head>
+<body>
+<!-- top-nav -->
+<div class="box-header">
+	<div class="box-top clearfix">
+		<div class="box-products">
+		</div>
+		<div class="box-login">
+			<a href="/to_login">登录</a>&nbsp;|&nbsp;<a href="/to_regist">注册</a>
+			<span class="collect"><a href="javascript:addfavor(' http://www.91jirnong.com','91金融超市');">收藏91金融超市</a></span>
+		</div>
+	</div>
+</div>
+<!-- top-nav over -->
+<div class="box-bg-logo">
+	<div class="box box-logo clearfix">
+	</div>
+</div>
+<!-- box-logo over -->
+
+<div class="content content-use clearfix">
+	<div class="use-nav"></div>
+	<div class="login">
+		
+	</div>
+</div>
+<!-- content over -->
+<div class="box-footer">
+</div>
+<!-- footer over -->
+<div class="box-copy">
+</div>
+<!-- box-copy over -->
+<script src="script/jquery-1.11.1.min.js"></script>
+<script src="script/jquery.form.js"></script>
+<script src="script/fn-login.js"></script>
+<script src="script/fn-syq.js"></script>
+<script src="script/public-model.js"></script>
+<script>
+function addfavor(url,title) {
+    if(confirm("网站名称："+title+"\n网址："+url+"\n确定添加收藏?")){
+        var ua = navigator.userAgent.toLowerCase();
+        if(ua.indexOf("msie 8")>-1){
+            external.AddToFavoritesBar(url,title,'91jinrong');  //IE8
+        }else{
+            try {
+                window.external.addFavorite(url, title);
+            } catch(e) {
+                try {
+                    window.sidebar.addPanel(title, url, "");  //firefox
+                } catch(e) {
+                    alert("加入收藏失败，请使用Ctrl+D进行添加");
+                }
+            }
+        }
+    }
+}
+</script>
+</body>
+</html>
